@@ -142,3 +142,6 @@ Maka, telah didapatkan tabel NID subnet dengan metode CIDR
 
 
 
+
+
+
