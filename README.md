@@ -84,8 +84,24 @@ Berikut Topologi dengan label / subnet yang ditandai
 
 Setelah selesai menentukan berapa banyak subnet yaitu 18 subnet, serta menamai dari A1-A18, yang berikutnya dilakukan adalah menghitung berapa banyak ip yang dibutuhkan.
 
-#### Tabel IP yang dibutuhkan
+#### VLSM
 
-<iframe src="http://example.com/file.pdf" frameborder="1"></iframe>
+Karena tree terlalu besar, silahkan akses <a href="https://docs.google.com/spreadsheets/d/1Fi4FV33Nvimgh-x7T5VunAlKUVINWMHdP2yUx-4pypI/edit#gid=1119251696">disini untuk detail</a>
+
+<br>
+Maka, telah didapatkan tabel NID subnet dengan metode VLSM
+
+<img src="images/vlsm.jpg">
+<br>
+
+#### CIDR
+
+CIDR BELOM
+
+### Konfigurasi
+
+
+
+
 
 
