@@ -64,6 +64,15 @@ Berikut tabel yang tabel subnet / label :
 <img src="images/tabel_label.jpg">
 <br>
 
+Setelah selesai, didapatkan bahwa kita membutuhkan 2618 IP Addresses, sehingga NID root adalah
+
+```
+Network ID        : 10.31.0.0/20
+Netmask           : 255.255.240.0
+Broadcast Address : 10.31.15.255
+Hosts             : 4094
+```
+
 #### Topologi dengan label
 
 Berikut Topologi dengan label / subnet yang ditandai
