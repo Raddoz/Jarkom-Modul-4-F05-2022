@@ -1,10 +1,12 @@
 # Jarkom-Modul-4-F05-2022
 
+## Kelompok F05
+
 | Nama | NRP |
 | ------------- | ------------- |
 | Muhammad Amin | 5025201251 |
-| Aiffah Kiysa Waafi | 5025201202 |
 | Elthan Ramanda B | 5025201092 |
+| Aiffah Kiysa Waafi | 5025201202 |
 
 ## Soal
 
@@ -41,4 +43,40 @@
 Tidak perlu menggunakan DHCP untuk pembagian IP pada GNS3
 
 <br>
+
+##Jawaban
+
+Ada beberapa tahap yang perlu dilakukan dalam praktikum ini yaitu :
+1. Labelling subnet
+2. Subnetting 
+	a. VLSM
+	b. CIDR
+3. Topologi
+4. Konfigurasi
+
+###Labelling
+
+Pada tahap labelling, ada total 18 subnet. Kami memberikan A1 kepada subnet terjauh dari cloud.
+
+####Tabel Label
+
+Berikut tabel yang tabel subnet / label :
+
+<img src="tabel_label.jpg">
+<br>
+####Topologi dengan label
+
+Berikut Topologi dengan label / subnet yang ditandai
+
+<img src="topo_label.jpg">
+<br>
+
+###Subnetting
+
+Setelah selesai menentukan berapa banyak subnet yaitu 18 subnet, serta menamai dari A1-A18, yang berikutnya dilakukan adalah menghitung berapa banyak ip yang dibutuhkan.
+
+####Tabel IP yang dibutuhkan
+
+
+
 
