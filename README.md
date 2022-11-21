@@ -127,7 +127,7 @@ Berikut visualisasi per langkah
 <img src="images/cidr-5.jpg">
 <br>
 
-Karena tree terlalu besar, silahkan akses <a href"https://docs.google.com/spreadsheets/d/1Fi4FV33Nvimgh-x7T5VunAlKUVINWMHdP2yUx-4pypI/edit#gid=116903094">disini untuk detail</a>
+Karena tree terlalu besar, silahkan akses <a href="https://docs.google.com/spreadsheets/d/1Fi4FV33Nvimgh-x7T5VunAlKUVINWMHdP2yUx-4pypI/edit#gid=116903094">disini untuk detail</a>
 
 <br>
 Maka, telah didapatkan tabel NID subnet dengan metode CIDR
