@@ -82,8 +82,7 @@ Berikut Topologi dengan label / subnet yang ditandai
 
 ### Subnetting
 
-Setelah selesai menentukan berapa banyak subnet yaitu 18 subnet, serta menamai dari A1-A18, yang berikutnya dilakukan adalah menghitung berapa banyak ip yang dibutuhkan.
-
+Setelah selesai menentukan berapa banyak subnet yaitu 18 subnet, serta menamai dari A1-A18 dan mendapatkan banyaknya IP yang dibutuhakan, selanjutnya lakukan pembagian nid subnet
 #### VLSM
 
 Karena tree terlalu besar, silahkan akses <a href="https://docs.google.com/spreadsheets/d/1Fi4FV33Nvimgh-x7T5VunAlKUVINWMHdP2yUx-4pypI/edit#gid=1119251696">disini untuk detail</a>
@@ -96,7 +95,45 @@ Maka, telah didapatkan tabel NID subnet dengan metode VLSM
 
 #### CIDR
 
-CIDR BELOM
+Berikut tabel tiap langkah metode CIDR
+
+<img src="images/cidr_langkah.jpg">
+<br>
+
+Berikut visualisasi per langkah 
+
+##### Langkah 1
+
+<img src="images/topo_labelled.jpg">
+<br>
+
+##### Langkah 2
+
+<img src="images/cidr-2.jpg">
+<br>
+
+##### Langkah 3
+
+<img src="images/cidr-3.jpg">
+<br>
+
+##### Langkah 4
+
+<img src="images/cidr-4.jpg">
+<br>
+
+##### Langkah 5
+
+<img src="images/cidr-5.jpg">
+<br>
+
+Karena tree terlalu besar, silahkan akses <a href"https://docs.google.com/spreadsheets/d/1Fi4FV33Nvimgh-x7T5VunAlKUVINWMHdP2yUx-4pypI/edit#gid=116903094">disini untuk detail</a>
+
+<br>
+Maka, telah didapatkan tabel NID subnet dengan metode CIDR
+
+<img src="cidr.jpg">
+<br>
 
 ### Konfigurasi
 
