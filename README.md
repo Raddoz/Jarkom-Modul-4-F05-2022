@@ -48,8 +48,8 @@ Tidak perlu menggunakan DHCP untuk pembagian IP pada GNS3
 Ada beberapa tahap yang perlu dilakukan dalam praktikum ini yaitu :
 1. Labelling subnet
 2. Subnetting 
-	a. VLSM
-	b. CIDR
+	1. VLSM
+	2. CIDR
 3. Topologi
 4. Konfigurasi
 
@@ -61,13 +61,13 @@ Pada tahap labelling, ada total 18 subnet. Kami memberikan A1 kepada subnet terj
 
 Berikut tabel yang tabel subnet / label :
 
-<img src="tabel_label.jpg">
+<img src="images/tabel_label.jpg">
 <br>
 #### Topologi dengan label
 
 Berikut Topologi dengan label / subnet yang ditandai
 
-<img src="topo_label.jpg">
+<img src="images/topo_labelled.jpg">
 <br>
 
 ### Subnetting
