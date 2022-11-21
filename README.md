@@ -63,6 +63,7 @@ Berikut tabel yang tabel subnet / label :
 
 <img src="images/tabel_label.jpg">
 <br>
+
 #### Topologi dengan label
 
 Berikut Topologi dengan label / subnet yang ditandai
@@ -76,6 +77,6 @@ Setelah selesai menentukan berapa banyak subnet yaitu 18 subnet, serta menamai d
 
 #### Tabel IP yang dibutuhkan
 
-
+[embed]http://example.com/file.pdf[/embed]
 
 
