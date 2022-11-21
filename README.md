@@ -77,6 +77,6 @@ Setelah selesai menentukan berapa banyak subnet yaitu 18 subnet, serta menamai d
 
 #### Tabel IP yang dibutuhkan
 
-[embed]http://example.com/file.pdf[/embed]
+<embed>http://example.com/file.pdf</embed>
 
 
