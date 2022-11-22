@@ -139,82 +139,69 @@ Maka, telah didapatkan tabel NID subnet dengan metode CIDR
 
 #### Cisco (VLSM)
 
-Agar routing efisien dalam hal cara konfigurasi, pemilihan ip subnet telah dikelompokkan, sehingga saat konfigurasi, hanya perlu meng-add routing sebanyak router tetangga
+Agar routing efisien dalam hal cara konfigurasi, pemilihan ip subnet telah dikelompokkan, sehingga saat konfigurasi, hanya perlu meng-add routing sebanyak router tetangga dan client
 
-- The Refornance
+Routing ada 2 jenis yaitu :
+- next hop
+- exit interface
+
+Jika ingin agar client yang terhubung dengan router dapat terhubung keluar, perlu ditambahkan routing exit interface
+
+untuk menambahkan routing exit interface jika tidak bisa via GUI, jalankan command ini di CLI, pastikan sekarang berada di 
+
+"Router(config)#ip route [NID] [Netmask] [interface]"
+<br>
+contoh : ip route 10.31.15.16 255.255.255.252 FastEthernet 0/1
+
+- The Resonance
 ```
-
+10.31.8.0/21 via 10.31.15.10
+10.31.0.0/21 via 10.31.5.10
+10.31.8.0/23 via 10.31.15.14
+10.31.15.16/30 via FastEthernet0/1
 ```
 - The Order
 ```
-
+0.0.0.0/0 via 10.31.5.9
+10.31.0.0/21 via 10.31.5.6
+10.31.6.0/26 via FastEthernet0/1
 ```
 - The Instrument
 ```
-
+0.0.0.0/0 via 10.31.15.9
+10.31.15.128/25 via FastEthernet0/1
+10.31.10.0/24 via 10.31.15.2
+10.31.12.0/22 via 10.31.15.6
 ```
 - The Magical
 ```
-
+0.0.0.0/0 via 10.31.15.13
 ```
 - The Minister
 ```
-
+0.0.0.0/0 via 10.31.15.5
+10.31.15.20/30 via 10.31.14.3
+10.31.14.0/24 via Ethernet0/3/0
+10.31.12.0/23 via FastEthernet0/1
 ```
 - The Dauntless
 ```
-
+0.0.0.0/0 via 10.31.5.1
 ```
 - The Profound
 ```
-
+0.0.0.0/0 via 10.31.15.1
 ```
 - The Firefist
 ```
-
+0.0.0.0/0 via 10.31.15.5
+10.31.8.0/22 via FastEthernet0/1
+10.31.14.0/24 via Ethernet0/3/0
+10.31.11.0/30 via 10.31.14.3
 ```
 - The Queen
 ```
-
-```
-
-Jika ingin routing efisien dalam ketepatan serta dapat diketahui apakah Destination IP reachable atau unreachable, maka perlu secara spesifik melakukan konfigurasi routing pada tiap router
-
-- The Refornance
-```
-
-```
-- The Order
-```
-
-```
-- The Instrument
-```
-
-```
-- The Magical
-```
-
-```
-- The Minister
-```
-
-```
-- The Dauntless
-```
-
-```
-- The Profound
-```
-
-```
-- The Firefist
-```
-
-```
-- The Queen
-```
-
+0.0.0.0/0 via 10.31.14.1
 ```
 
 #### GNS3 (CIDR)
