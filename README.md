@@ -178,6 +178,52 @@ Agar routing efisien dalam hal cara konfigurasi, pemilihan ip subnet telah dikel
 
 ```
 
+Jika ingin routing efisien dalam ketepatan serta dapat diketahui apakah Destination IP reachable atau unreachable, maka perlu secara spesifik melakukan konfigurasi routing pada tiap router
+
+- The Refornance
+```
+
+```
+- The Order
+```
+
+```
+- The Instrument
+```
+
+```
+- The Magical
+```
+
+```
+- The Minister
+```
+
+```
+- The Dauntless
+```
+
+```
+- The Profound
+```
+
+```
+- The Firefist
+```
+
+```
+- The Queen
+```
+
+```
+
+#### GNS3 (CIDR)
+
+routing CIDR sudah efisien dalam hal konfigurasi serta dapat diketahui apakah destination IP reachable atau tidak, tetapi tidak efisien dalam hal range ip address yang digunakan dalam melakukan subnetting, yaitu perlu menggunakan netmask /18, padahal pada VLSM hanya butuh /20.
+
+
+
+
 
 
 
