@@ -132,15 +132,51 @@ Karena tree terlalu besar, silahkan akses <a href="https://docs.google.com/sprea
 <br>
 Maka, telah didapatkan tabel NID subnet dengan metode CIDR
 
-<img src="cidr.jpg">
+<img src="images/cidr.jpg">
 <br>
 
 ### Konfigurasi
 
+#### Cisco (VLSM)
 
+Agar routing efisien dalam hal cara konfigurasi, pemilihan ip subnet telah dikelompokkan, sehingga saat konfigurasi, hanya perlu meng-add routing sebanyak router tetangga
 
+- The Refornance
+```
 
+```
+- The Order
+```
 
+```
+- The Instrument
+```
+
+```
+- The Magical
+```
+
+```
+- The Minister
+```
+
+```
+- The Dauntless
+```
+
+```
+- The Profound
+```
+
+```
+- The Firefist
+```
+
+```
+- The Queen
+```
+
+```
 
 
 
