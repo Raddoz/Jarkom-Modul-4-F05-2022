@@ -93,6 +93,25 @@ Maka, telah didapatkan tabel NID subnet dengan metode VLSM
 <img src="images/vlsm.jpg">
 <br>
 
+#### VLSM-Optimation
+
+Berbeda dengan VLSM di atas yang mana hanya mengambil NID paling kiri, VLSM dioptimasi mengambil berdasarkan subnet yang lebih besar seperti CIDR
+
+Langkah pertama, kita hitung jumlah ip yang dibutuhkan pada masing masing router, berikut tabelnya :
+
+<img src="images/routers.jpg">
+<br>
+
+setelah itu semua device (kecuali subnet router-router) 
+
+Karena tree terlalu besar, silahkan akses <a href="https://docs.google.com/spreadsheets/d/1Fi4FV33Nvimgh-x7T5VunAlKUVINWMHdP2yUx-4pypI/edit#gid=1119251696">disini untuk detail</a>
+
+<br>
+Maka, telah didapatkan tabel NID subnet dengan metode VLSM
+
+<img src="images/vlsm-optimation.jpg">
+<br>
+
 #### CIDR
 
 Berikut tabel tiap langkah metode CIDR
@@ -138,6 +157,9 @@ Maka, telah didapatkan tabel NID subnet dengan metode CIDR
 ### Konfigurasi
 
 #### Cisco (VLSM)
+
+<img src="images/cisco.jpg">
+<br>
 
 Agar routing efisien dalam hal cara konfigurasi, pemilihan ip subnet telah dikelompokkan, sehingga saat konfigurasi, hanya perlu meng-add routing sebanyak router tetangga dan client
 
