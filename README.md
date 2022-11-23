@@ -77,7 +77,7 @@ Hosts             : 4094
 
 Berikut Topologi dengan label / subnet yang ditandai
 
-<img src="images/topo_labelled.jpg">
+<img src="images/topo_labelled.png">
 <br>
 
 ### Subnetting
@@ -127,37 +127,37 @@ Berikut visualisasi per langkah
 
 ##### Langkah 1
 
-<img src="images/topo_labelled.jpg">
+<img src="images/topo_labelled.png">
 <br>
 
 ##### Langkah 2
 
-<img src="images/cidr-2.jpg">
+<img src="images/cidr-2.png">
 <br>
 
 ##### Langkah 3
 
-<img src="images/cidr-3.jpg">
+<img src="images/cidr-3.png">
 <br>
 
 ##### Langkah 4
 
-<img src="images/cidr-4.jpg">
+<img src="images/cidr-4.png">
 <br>
 
 ##### Langkah 5
 
-<img src="images/cidr-5.jpg">
+<img src="images/cidr-5.png">
 <br>
 
 ##### Langkah 6
 
-<img src="images/cidr-6.jpg">
+<img src="images/cidr-6.png">
 <br>
 
 ##### Langkah 7
 
-<img src="images/cidr-7.jpg">
+<img src="images/cidr-7.png">
 <br>
 
 Karena tree terlalu besar, silahkan akses <a href="https://docs.google.com/spreadsheets/d/1Fi4FV33Nvimgh-x7T5VunAlKUVINWMHdP2yUx-4pypI/edit#gid=116903094">disini untuk detail</a>
