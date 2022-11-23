@@ -102,12 +102,16 @@ Langkah pertama, kita hitung jumlah ip yang dibutuhkan pada masing masing router
 <img src="images/routers.jpg">
 <br>
 
-setelah itu semua device (kecuali subnet router-router) 
+setelah itu semua device (kecuali subnet router-router) totalnya ada 2604 + 7 hubungan antar router = 2618 IP
 
-Karena tree terlalu besar, silahkan akses <a href="https://docs.google.com/spreadsheets/d/1Fi4FV33Nvimgh-x7T5VunAlKUVINWMHdP2yUx-4pypI/edit#gid=1119251696">disini untuk detail</a>
+Netmask yang dipakai tetep /20, padahal pada tabel router terdapat 2 netmask /21, pada resonance bercabang 3, satu lagi ditaruh pada subnet yang masih ada cukup ip (pada vlsm kami ditaruh di bawah subnet The Instrument)
+
+Nanti pada routing, bisa di-specify NID pada subnetting The Order sehingga tetap dapat bisa diakses
+
+Karena tree terlalu besar, silahkan akses <a href="https://docs.google.com/spreadsheets/d/1Fi4FV33Nvimgh-x7T5VunAlKUVINWMHdP2yUx-4pypI/edit#gid=1768378086">disini untuk detail</a>
 
 <br>
-Maka, telah didapatkan tabel NID subnet dengan metode VLSM
+Maka, telah didapatkan tabel NID subnet dengan metode VLSM yang dioptimasi
 
 <img src="images/vlsm-optimation.jpg">
 <br>
@@ -228,9 +232,83 @@ contoh : ip route 10.31.15.16 255.255.255.252 FastEthernet 0/1
 
 #### GNS3 (CIDR)
 
-routing CIDR sudah efisien dalam hal konfigurasi serta dapat diketahui apakah destination IP reachable atau tidak, tetapi tidak efisien dalam hal range ip address yang digunakan dalam melakukan subnetting, yaitu perlu menggunakan netmask /18, padahal pada VLSM hanya butuh /20.
+CIDR sudah efisien dalam hal subnetting, tetapi tidak efisien dalam hal range ip address yang digunakan dalam melakukan subnetting, yaitu perlu menggunakan netmask /17, padahal pada VLSM hanya butuh /20.
+<br>
+Hal itu bertujuan untuk memudahkan penambahan subnet baru pada jaringan komputer yang kita sudah buat
 
+Berikut topologi :
 
+<img src="images/gns3.jpg">
+<br>
+
+HATI-HATI
+- Setiap mengganti file /etc/network/interface atau network configuration, pastikan device di-restart
+- Setelah melakukan routing, router jangan dimatikan, harus setup lagi jika mati
+- Karena semua device ingin connect internet, maka jangan lupa ganti file /etc/resolv.conf
+Jalankan perintah ini untuk menambah routing pada suatu router 
+```
+route add -net [NID] netmask [netmask] gw [next hop]
+```
+Contoh pada device resonance :
+```
+route add -net 10.31.0.0 netmask 255.255.192.0 gw 10.31.32.2
+```
+Jalankan perintah ini untuk melihat routing yang telah kita konfigurasi
+```
+ip route | grep "via"
+```
+- The Resonance
+```
+default via 192.168.122.1 dev eth0  metric 295 
+10.31.0.0/18 via 10.31.32.2 dev eth4 
+10.31.64.0/19 via 10.31.80.2 dev eth3 
+10.31.96.0/19 via 10.31.98.2 dev eth2 
+10.31.100.0/30 via 10.31.100.2 dev eth1 
+```
+- The Magical
+```
+default via 10.31.98.1 dev eth0
+```
+- The Instruments
+```
+default via 10.31.80.1 dev eth0 
+10.31.64.0/21 via 10.31.68.2 dev eth2 
+10.31.72.0/21 via 10.31.73.2 dev eth1 
+10.31.76.0/25 via 10.31.76.2 dev eth3
+```
+- The Order
+```
+default via 10.31.32.1 dev eth0 
+10.31.0.0/20 via 10.31.8.2 dev eth2 
+10.31.16.0/26 via 10.31.16.2 dev eth1 
+```
+- The Minister
+```
+default via 10.31.8.1 dev eth0 
+10.31.0.0/22 via 10.31.0.2 dev eth1 
+10.31.4.0/22 via 10.31.5.2 dev eth2 
+```
+- The Dauntless
+```
+default via 10.31.5.1 dev eth0 
+```
+- The Profound
+```
+default via 10.31.73.1 dev eth0 
+```
+-The Firefist
+```
+default via 10.31.68.1 dev eth0 
+10.31.64.0/23 via 10.31.64.3 dev eth2 
+10.31.65.0/24 via 10.31.64.2 dev eth2 
+10.31.66.0/23 via 10.31.66.2 dev eth1 
+```
+- The Queen
+```
+default via 10.31.64.1 dev eth0
+```
+
+Konfigurasi telah selesai dan semua device saling terhubung dan semua bisa mengakses internet
 
 
 
