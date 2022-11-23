@@ -10,7 +10,7 @@
 
 ## Soal
 
-<img src="images/soal_cpt.jpg">
+<img src="images/soal_cpt.png">
 <br>
 
 ### Catatan
