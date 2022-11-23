@@ -251,6 +251,11 @@ Berikut topologi :
 <img src="images/gns3.jpg">
 <br>
 
+Berikut tabel ip lengkapnya :
+
+<img src="images/gns3-ip-tables.jpg">
+<br>
+
 HATI-HATI
 - Setiap mengganti file /etc/network/interface atau network configuration, pastikan device di-restart
 - Setelah melakukan routing, router jangan dimatikan, harus setup lagi jika mati
