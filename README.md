@@ -106,7 +106,7 @@ setelah itu semua device (kecuali subnet router-router) totalnya ada 2604 + 7 hu
 
 Netmask yang dipakai tetep /20, padahal pada tabel router terdapat 2 netmask /21, pada resonance bercabang 3, satu lagi ditaruh pada subnet yang masih ada cukup ip (pada vlsm kami ditaruh di bawah subnet The Instrument)
 
-Nanti pada routing, bisa di-specify NID pada subnetting The Order sehingga tetap dapat bisa diakses
+Nanti pada routing, bisa di-specify NID sehingga The Magical tetap dapat bisa diakses
 
 Karena tree terlalu besar, silahkan akses <a href="https://docs.google.com/spreadsheets/d/1Fi4FV33Nvimgh-x7T5VunAlKUVINWMHdP2yUx-4pypI/edit#gid=1768378086">disini untuk detail</a>
 
@@ -148,6 +148,16 @@ Berikut visualisasi per langkah
 ##### Langkah 5
 
 <img src="images/cidr-5.jpg">
+<br>
+
+##### Langkah 6
+
+<img src="images/cidr-6.jpg">
+<br>
+
+##### Langkah 7
+
+<img src="images/cidr-7.jpg">
 <br>
 
 Karena tree terlalu besar, silahkan akses <a href="https://docs.google.com/spreadsheets/d/1Fi4FV33Nvimgh-x7T5VunAlKUVINWMHdP2yUx-4pypI/edit#gid=116903094">disini untuk detail</a>
@@ -245,6 +255,7 @@ HATI-HATI
 - Setiap mengganti file /etc/network/interface atau network configuration, pastikan device di-restart
 - Setelah melakukan routing, router jangan dimatikan, harus setup lagi jika mati
 - Karena semua device ingin connect internet, maka jangan lupa ganti file /etc/resolv.conf
+
 Jalankan perintah ini untuk menambah routing pada suatu router 
 ```
 route add -net [NID] netmask [netmask] gw [next hop]
@@ -253,6 +264,7 @@ Contoh pada device resonance :
 ```
 route add -net 10.31.0.0 netmask 255.255.192.0 gw 10.31.32.2
 ```
+
 Jalankan perintah ini untuk melihat routing yang telah kita konfigurasi
 ```
 ip route | grep "via"
